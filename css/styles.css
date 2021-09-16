@@ -98,3 +98,68 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/*  Badges
+---------------------------------------------------------- */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondry {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
+/* Lists 
+---------------------------------------------------------- */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-Headings);
+}
+
+.list--inline {
+  margin-left: 0.5rem;
+}
+.list--inline .list__item {
+  /* We are using the BEM convetion, we seperate a block(ul, list) 
+  from its elements(li, item) using __   */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list--tick {
+  list-style-image: url(../images/Ryan-Taylor-Green-Tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+}
