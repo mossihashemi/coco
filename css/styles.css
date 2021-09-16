@@ -247,3 +247,51 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Inputs
+---------------------------------------------------------- */
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-Headings);
+  font-size: 1.5rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+/* psudo element selector */
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+/* nesting , here means=> if an input field is inside an input-group*/
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+  overflow: auto;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+.input-group .icon-container {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+
+  .input-group .icon-container {
+    display: flex;
+  }
+}
