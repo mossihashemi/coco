@@ -22,6 +22,7 @@ A Beautiful, Responsive, Fast and Pure HTML/CSS website.
        h${Heading $}*3
        <p>lorem50</p>
        ul>list>li{Item $}*3
+       .media>.media__image+.media__body
        ```
 
      
@@ -41,13 +42,13 @@ A Beautiful, Responsive, Fast and Pure HTML/CSS website.
     }
     ```
    - Box-Sizing
-    ```
-       *,
-       *::after,
-       *::before{
-        box-sizing: border-box;
-        }
-    ```
+     ```
+        *,
+        *::after,
+        *::before{
+         box-sizing: border-box;
+         }
+     ```
    - Typography
      - Set the **rem** size => 62.5% * of 16px = 10px
         ```
