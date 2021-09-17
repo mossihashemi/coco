@@ -171,10 +171,17 @@ a {
   width: 4rem;
   height: 4rem;
 }
-
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
 .icon--primary {
   fill: var(--color-accent);
 }
+.icon--white {
+  fill: white;
+}
+
 /* in BEM convention we use a single hyphon (-) to seperrate multiple words */
 .icon-container {
   background: rgb(255, 236, 236);
@@ -490,5 +497,42 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials 
+---------------------------------------------------------- */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > img {
+  width: 100%;
+}
+.testimonial__image > .icon-container {
+  position: absolute;
+  right: -32px;
+  top: 3rem;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+.testimonial .quote {
+  font-size: 110%;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+
+  .testimonial .quote {
+    font-size: 120%;
+    line-height: 1.5;
+    margin: 5rem 0 0 6rem;
   }
 }
